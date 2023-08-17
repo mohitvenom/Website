@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* navigation bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 0px;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 77%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+/* logo and img */
+
+#logo {
+  margin: 2px 13px;
+}
+
+#logo img {
+  margin: 30px 6px;
+  height: 56px;
+  /* width: 550px; */
+}
+
+/* navigation bar : list styling */
+#navbar ul {
+  display: flex;
+  font-family: 'Caprasimo', cursive;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 3px 22px;
+  color: whitesmoke;
+}
+
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+/* home section */
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 483px;
+}
+
+#home::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  background: url("../bg.jpg") no-repeat center center/cover;
+  height: 800px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.90;
+}
+
+#home h1 {
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+}
+
+#home p {
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: 'Bree Serif', serif;
+}
+
+/* sevices section */
+#services {
+  margin: 34px;
+  display: flex;
+  margin-bottom: px;
+  padding: 50px;
+  margin: 50px;
+  font-size: 20rem;
+}
+.services-container{
+  font-size: 20rem;
+}
+
+#services .box {
+  border: 2px solid red;
+  padding: px;
+  margin: -7px 4px;
+  border-radius: 28px;
+  background-color: rgb(200, 243, 243);
+  margin-top: -20px;
+
+}
+
+#services .box img {
+  height: 244px;
+    margin: auto;
+    display: block;
+    padding: 63px;
+    border-radius: 66px;
+    width: 550px;
+}
+
+/* clients section */
+#client-section {
+  position: relative;
+}
+
+#client-section::before {
+  content: "";
+  position: absolute;
+  background: url('../bg.jpg ');
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -35px;
+  padding-left: 118px;
+}
+/* 
+.client-item1 {
+  display: block;
+  margin: auto;
+  width: 25%;
+}
+
+.client-item2 {
+  display: block;
+  margin: auto;
+  width: 25%;
+}
+
+.client-item3 {
+  display: block;
+  margin: auto;
+  width: 25%;
+} */
+
+#clients img {
+  height: 407%;
+  padding: 44px 202px;
+}
+
+/* utility classes */
+.h-primary {
+  font-size: 3rem;
+  font-family: 'Bree Serif', serif;
+  padding: 100px
+}
+
+.h-secondary {
+  font-family: 'Bree Serif', serif;
+  font-size: 1.7rem;
+  padding: 12px
+}
+
+
+
+
+.btn {
+  padding: 6px 20px;
+  background-color: brown;
+  border: 2px solid white;
+  cursor: pointer;
+  color: white;
+  margin: 17px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* contact  section */
+#contact {
+  position: relative;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url('../contact.jpg');
+}
+
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+
+#contact-box input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 9px;
+  font-size: 1.1rem;
+
+}
+
+#contact-box form {
+  width: 40%;
+}
+
+#contact-box label {
+  font-size: 2.3rem;
+  font-family: 'Bree Serif', serif;
+}
+
+footer {
+  background: black;
+  color: white;
+  padding: 9px 20px;
+}
+
+#navbar {
+  position: sticky;
+  background-color: black;
+}
+
+#logo {
+
+  border-radius: 200px;
+}
+
+.gif {
+  /* position: static; */
+  /* top: 20000px; */
+  /* right:5000px; */
+  margin: auto;
+  margin-left: 1000px;
+  margin-top: 26px;
+
+}
+
+#home p {
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.button {
+  background-color: rgb(199, 199, 230);
+  font-size: large;
+}
+
+/* Add animation to the service boxes */
+.box {
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  padding-bottom: 3px;
+
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+/* Add animation to the images on hover */
+.box img {
+  transition: transform 0.3s ease;
+}
+
+.box:hover img {
+  transform: scale(1.1);
+}
+
+/* Add animation to the service headings */
+.box h2 {
+  transition: color 0.3s ease;
+}
+
+.box:hover h2 {
+  color: #ff9900;
+  /* Change to your desired hover color */
+}
+
+/* Add animation to the service descriptions */
+.box p {
+  transition: opacity 0.3s ease;
+}
+
+.box:hover p {
+  opacity: 0.8;
+  /* Change to your desired opacity on hover */
+}
+
+.center {
+  text-align: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+body {
+  background-color: rgb(203, 214, 243);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
